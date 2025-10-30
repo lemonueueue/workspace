@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <h1 class="mb-4">About Us</h1>
+        
+        <p class="lead">Welcome to our Flask application. We're passionate about building modern, efficient web applications.</p>
+        
+        <h2 class="mt-5 mb-3">Our Mission</h2>
+        <p>Our mission is to provide high-quality, scalable web solutions that meet the needs of modern businesses and developers. We believe in clean code, best practices, and user-centered design.</p>
+        
+        <h2 class="mt-5 mb-3">What We Do</h2>
+        <ul class="list-unstyled">
+            <li class="mb-2">✓ Build responsive web applications</li>
+            <li class="mb-2">✓ Create efficient backend systems</li>
+            <li class="mb-2">✓ Implement modern design patterns</li>
+            <li class="mb-2">✓ Focus on performance and security</li>
+        </ul>
+        
+        <h2 class="mt-5 mb-3">Technology Stack</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Backend</h4>
+                <ul>
+                    <li>Flask - Python web framework</li>
+                    <li>Jinja2 - Templating engine</li>
+                    <li>Python 3.x</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>Frontend</h4>
+                <ul>
+                    <li>Bootstrap 5 - CSS framework</li>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="mt-5">
+            <a href="{{ url_for('contact') }}" class="btn btn-primary">Get In Touch</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

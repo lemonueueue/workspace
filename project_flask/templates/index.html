@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section text-center py-5">
+    <h1 class="display-3 fw-bold mb-4">Welcome to Flask App</h1>
+    <p class="lead mb-4">A modern, responsive web application built with Flask and Bootstrap</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="{{ url_for('about') }}" class="btn btn-primary btn-lg px-4 gap-3">Learn More</a>
+        <a href="{{ url_for('contact') }}" class="btn btn-outline-secondary btn-lg px-4">Get Started</a>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="row text-center my-5">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="feature-icon bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center fs-2 mb-3" style="width: 4rem; height: 4rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                        <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">Fast & Efficient</h3>
+                <p class="card-text">Built with Flask for lightning-fast performance and efficient resource usage.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="feature-icon bg-success bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center fs-2 mb-3" style="width: 4rem; height: 4rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">Responsive Design</h3>
+                <p class="card-text">Fully responsive layout that works seamlessly on all devices and screen sizes.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <div class="feature-icon bg-info bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center fs-2 mb-3" style="width: 4rem; height: 4rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                    </svg>
+                </div>
+                <h3 class="card-title">Easy to Customize</h3>
+                <p class="card-text">Clean, well-structured code that's easy to understand and customize to your needs.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Call to Action -->
+<div class="row bg-light rounded p-5 my-5">
+    <div class="col-lg-12 text-center">
+        <h2 class="mb-3">Ready to Get Started?</h2>
+        <p class="lead mb-4">Join us today and experience the power of modern web development.</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Contact Us</a>
+    </div>
+</div>
+{% endblock %}
